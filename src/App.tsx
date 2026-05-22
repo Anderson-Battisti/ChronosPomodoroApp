@@ -26,7 +26,7 @@ export function App()
                 <form className='form' action=''>
                     
                     <div className='formRow'>
-                        <Input id='myInput' type='text' />
+                        <Input id='myInput' labelText='Label test' type='text' />
                     </div>
 
                     <div className='formRow'>

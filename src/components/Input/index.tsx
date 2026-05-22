@@ -1,14 +1,17 @@
+import styles from './styles.module.css';
+
 type InputProps = 
 {
-    type: string;
-}
+    id: string;
+    labelText: string;
+} & React.ComponentProps<'input'>;
 
-export function Input( { type }: InputProps )
+export function Input( { id, labelText, type }: InputProps )
 {
     return(
         <>
-            <label htmlFor='myInput'>task</label>
-            <input id='myInput' type={ type } />
+            <label htmlFor={ id } >{ labelText }</label>
+            <input className={ styles.input } id={ id } type={ type } />
         </>
     );
 }
